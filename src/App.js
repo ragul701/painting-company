@@ -1,71 +1,79 @@
 import './App.css';
-const interiorImg = "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500";
-const exteriorImg = "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=500";
-const textureImg = "https://images.unsplash.com/photo-1562184552-997c461abbe6?w=500";
-const commercialImg = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500";
-const project1Img = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=500";
-const project2Img = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500";
-const project3Img = "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=500";
+
+import project1Img from "./assets/images/home1.jpg";
+import project2Img from "./assets/images/home2.jpg";
+import project3Img from "./assets/images/home3.jpg";
+import brush1 from "./assets/images/brush1.png";
+
+const interiorImg =
+  "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500";
+
+const exteriorImg =
+  "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=500";
+
+const textureImg =
+  "https://images.unsplash.com/photo-1562184552-997c461abbe6?w=500";
+
+const commercialImg =
+  "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500";
+
 function App() {
-  return (
-    <div className="App">
 
-      {/* ================= HERO ================= */}
-      <section className="hero" id="home">
+  
+ return (
+  <div className="App">
 
-        <div className="hero-overlay"></div>
+   
 
-        <div className="hero-content">
+    {/* ================= HERO ================= */}
+    <section className="hero" id="home">
 
-          <h1>
-            <br />
-            <span> Star Professional Home Painting</span>
-          </h1>
+      <div className="hero-left">
 
-          <p className="hero-text">
-            Quality painting services for homes, offices and commercial
-            spaces. We bring beautiful colours, clean finishing and
-            professional workmanship to every project.
-          </p>
+        
+        <h1>
+         ⭐ STAR PROFESSIONAL
+          <span> HOME PAINTING</span>
+        </h1>
 
-          <div className="hero-buttons">
+        <p className="hero-text">
+          We provide premium Interior, Exterior, Texture and Commercial
+          painting services with high-quality materials and expert workmanship.
+        </p>
 
-            <a href="#contact" className="primary-btn">
-              Get Free Quote
-              <span>↗</span>
-            </a>
+        <div className="hero-buttons">
 
-            <a href="#services" className="secondary-btn">
-              Our Services
-              <span>→</span>
-            </a>
+          <a href="#contact" className="primary-btn">
+            Get Free Quote
+          </a>
 
+          <a href="#projects" className="secondary-btn">
+            View Projects
+          </a>
+
+        </div>
+
+        <div className="hero-stats">
+
+          <div>
+            <h3>500+</h3>
+            <p>Projects Done</p>
           </div>
 
-          {/* Small Trust Details */}
-          <div className="hero-stats">
-
-            <div>
-              <strong>10+</strong>
-              <span>Years Experience</span>
-            </div>
-
-            <div>
-              <strong>500+</strong>
-              <span>Projects Completed</span>
-            </div>
-
-            <div>
-              <strong>100%</strong>
-              <span>Customer Satisfaction</span>
-            </div>
-
+          <div>
+            <h3>100%</h3>
+            <p>Customer Satisfaction</p>
           </div>
 
         </div>
 
-      </section>
+      </div>
 
+      <div className="hero-right">
+        <img src={project2Img} alt="Painting House" />
+      </div>
+
+    </section>
 
       {/* ================= SERVICES ================= */}
       <section className="services" id="services">
@@ -165,81 +173,88 @@ function App() {
         </div>
 
       </section>
+     {/* ================= ABOUT ================= */}
+<section className="about" id="about">
+
+  <div className="about-image">
+
+    <img
+      src={brush1}
+      alt="Painting Experience"
+      className="about-brush-image"
+    />
+
+    <div className="experience-box">
+      <strong>10+</strong>
+      <span>
+        Years of
+        <br />
+        Experience
+      </span>
+    </div>
+
+  </div>
 
 
-      {/* ================= ABOUT ================= */}
-      <section className="about" id="about">
+  <div className="about-content">
 
-        <div className="about-image">
+    <p className="section-title">
+      ABOUT STAR
+    </p>
 
-          <div className="experience-box">
-            <strong>10+</strong>
-            <span>
-              Years of
-              <br />
-              Experience
-            </span>
-          </div>
+    <h2>
+      We Don't Just Paint.
+      <br />
+      We <span>Transform</span> Spaces.
+    </h2>
 
-        </div>
+    <p>
+      Star Professional Painting provides reliable and
+      high-quality painting services for residential and
+      commercial spaces.
+    </p>
+
+    <p>
+      Our experienced painters focus on clean work,
+      excellent finishing, quality materials and complete
+      customer satisfaction.
+    </p>
 
 
-        <div className="about-content">
+    <div className="features">
 
-          <p className="section-title">
-            ABOUT STAR
-          </p>
+      <div>
+        <span>✓</span>
+        Experienced Painters
+      </div>
 
-          <h2>
-            We Don't Just Paint.
-            <br />
-            We <span>Transform</span> Spaces.
-          </h2>
+      <div>
+        <span>✓</span>
+        Quality Materials
+      </div>
 
-          <p>
-            Star Professional Painting provides reliable and
-            high-quality painting services for residential and
-            commercial spaces.
-          </p>
+      <div>
+        <span>✓</span>
+        Clean Finishing
+      </div>
 
-          <p>
-            Our experienced painters focus on clean work,
-            excellent finishing, quality materials and complete
-            customer satisfaction.
-          </p>
-        <div className="features">
+      <div>
+        <span>✓</span>
+        On-Time Completion
+      </div>
 
-            <div>
-              <span>✓</span>
-              Experienced Painters
-            </div>
+    </div>
 
-            <div>
-              <span>✓</span>
-              Quality Materials
-            </div>
 
-            <div>
-              <span>✓</span>
-              Clean Finishing
-            </div>
+    <a href="#contact" className="primary-btn dark-btn">
+      Work With Us
+      <span>↗</span>
+    </a>
 
-            <div>
-              <span>✓</span>
-              On-Time Completion
-            </div>
 
-          </div>
+  </div>
 
-          <a href="#contact" className="primary-btn dark-btn">
-            Work With Us
-            <span>↗</span>
-          </a>
-
-        </div>
-
-      </section>
-
+</section>
 
       {/* ================= PROJECTS ================= */}
       <section className="projects" id="projects">
