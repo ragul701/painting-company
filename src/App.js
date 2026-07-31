@@ -30,11 +30,18 @@ function App() {
 
       <div className="hero-left">
 
+        <h1 className="hero-title">
+  <span className="star-icon"></span>
+
+  <span className="title-top">
+    STAR PROFESSIONAL
+  </span>
+
+  <span className="title-top">
+    HOME PAINTING
+  </span>
+  </h1>
         
-        <h1>
-         ⭐ STAR PROFESSIONAL
-          <span> HOME PAINTING</span>
-        </h1>
 
         <p className="hero-text">
           We provide premium Interior, Exterior, Texture and Commercial
@@ -447,7 +454,7 @@ function App() {
           <div className="footer-brand">
 
             <a href="#home" className="footer-logo">
-              <h3>Star Professional Painting</h3>
+              <h3>Star Professional Home Painting</h3>
             </a>
 
             <p>

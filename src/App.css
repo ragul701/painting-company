@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap');
 
 * {
   margin: 0;
@@ -149,18 +148,43 @@ img {
     letter-spacing:3px;
     margin-bottom:20px;
 }
-
-.hero h1{
-    font-family:'Playfair Display',serif;
-    font-size:72px;
-    line-height:1.05;
-    color:#1f2937;
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 25px;
+  line-height: 0.95;
+  font-family: "Cormorant Garamond", serif;
 }
 
-.hero h1 span{
-    display:block;
-    color:#ff6b00;
+.star-icon {
+  font-size: 55px;
+  margin-bottom: 8px;
 }
+
+.title-top {
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #111827, #444444, #111827);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-bottom {
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #ff6a00, #ff9500, #ffc107);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 6px 20px rgba(255, 120, 0, 0.25);
+}
+
 
 .hero-text{
     margin:30px 0;
@@ -653,7 +677,7 @@ footer {
 
   color: white;
 
-  background: #1d1a18;
+  background: #000000;
 }
 
 .footer-content {
@@ -723,9 +747,9 @@ footer {
 
   gap: 20px;
 
-  border-top: 1px solid #38332f;
+  border-top: 1px solid #d4cdc7;
 
-  color: #777;
+  color: #ebe2e2;
 
   font-size: 11px;
 }
