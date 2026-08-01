@@ -5,18 +5,10 @@ import project2Img from "./assets/images/home2.jpg";
 import project3Img from "./assets/images/home3.jpg";
 import brush1 from "./assets/images/brush1.png";
 
-const interiorImg =
-  "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500";
-
-const exteriorImg =
-  "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=500";
-
-const textureImg =
-  "https://images.unsplash.com/photo-1562184552-997c461abbe6?w=500";
-
-const commercialImg =
-  "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500";
-
+import interiorImg from "./assets/images/roller.png";
+import exteriorImg from "./assets/images/brush.png";
+import textureImg from "./assets/images/texture.png";
+import commercialImg from "./assets/images/spraygun.png";
 function App() {
 
   
@@ -88,18 +80,16 @@ function App() {
         <div className="section-heading">
           <div>
             <p className="section-title">
-              WHAT WE DO
+              WHAT WE USE
             </p>
             <h2>
-              Our Painting
+           Professional
+           Painting 
               <br />
-              <span>Services</span>
+              <span>Tools</span>
             </h2>
           </div>
-          <p>
-            From a single room to a complete building, we provide
-            professional painting solutions with beautiful finishing
-            and reliable service.
+          <p>We use premium rollers, brushes, trowels, and airless spray guns to deliver smooth finishes and long-lasting painting results.
           </p>
         </div>
 
@@ -115,10 +105,9 @@ function App() {
               alt="Interior Painting"
               className="service-image"
             />
-            <h3>Interior Painting</h3>
+            <h3>Premium Paint Roller</h3>
             <p>
-              Beautiful and smooth interior painting services
-              for homes, apartments and offices.
+             Smooth and even wall finishes using premium quality paint rollers for homes, apartments, offices, and commercial spaces.
             </p>
             <a href="#contact">Learn More →</a>
           </div>
@@ -133,10 +122,9 @@ function App() {
               alt="Exterior Painting"
               className="service-image"
             />
-            <h3>Exterior Painting</h3>
+            <h3>Professional Paint Brush</h3>
             <p>
-              Professional exterior painting with durable,
-              weather-resistant and long-lasting finishing.
+            Precision painting for edges, corners, doors, windows, trims, and detailed finishing with high-quality brushes.
             </p>
             <a href="#contact">Learn More →</a>
           </div>
@@ -151,10 +139,9 @@ function App() {
               alt="Texture Painting"
               className="service-image"
             />
-            <h3>Texture Painting</h3>
+            <h3>Wall Finishing Trowel</h3>
             <p>
-              Modern texture designs and creative wall finishes
-              to give your space a unique appearance.
+            Professional wall putty and smooth finishing using high-quality plastering trowels for a perfect paint-ready surface.
             </p>
             <a href="#contact">Learn More →</a>
           </div>
@@ -169,10 +156,9 @@ function App() {
               alt="Commercial Painting"
               className="service-image"
             />
-            <h3>Commercial Painting</h3>
+            <h3>Airless Spray Gun</h3>
             <p>
-              Complete painting solutions for shops, offices,
-              apartments and commercial buildings.
+             Fast and flawless spray painting for villas, apartments, commercial buildings, factories, and large-scale projects.
             </p>
             <a href="#contact">Learn More →</a>
           </div>
