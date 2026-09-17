@@ -5,74 +5,65 @@ import project2Img from "./assets/images/home2.jpg";
 import project3Img from "./assets/images/home3.jpg";
 import brush1 from "./assets/images/brush1.png";
 
+
 import interiorImg from "./assets/images/roller.png";
 import exteriorImg from "./assets/images/brush.png";
 import textureImg from "./assets/images/texture.png";
 import commercialImg from "./assets/images/spraygun.png";
+
 function App() {
+  return (
+    <div className="App">
 
-  
- return (
-  <div className="App">
+      {/* ================= HERO ================= */}
+      <section className="hero" id="home">
 
-   
+        <div className="hero-left">
 
-    {/* ================= HERO ================= */}
-    <section className="hero" id="home">
+         
 
-      <div className="hero-left">
+          {/* Two Line Heading - Typewriter Effect */}
+          <h1 className="hero-title gradient-title">
+            <span className="typewriter-line tw-line1">STAR PROFESSIONAL</span>
+            <br />
+            <span className="typewriter-line tw-line2">HOME PAINTING</span>
+            <span className="tw-cursor">|</span>
+          </h1>
 
-        <h1 className="hero-title">
-  <span className="star-icon"></span>
+          <p className="hero-text">
+            We provide premium Interior, Exterior, Texture and Commercial
+            painting services with high-quality materials and expert workmanship.
+          </p>
 
-  <span className="title-top">
-    STAR PROFESSIONAL
-  </span>
+          <div className="hero-buttons">
+            <a href="#contact" className="primary-btn">
+              Get Free Quote
+            </a>
 
-  <span className="title-top">
-    HOME PAINTING
-  </span>
-  </h1>
-        
-
-        <p className="hero-text">
-          We provide premium Interior, Exterior, Texture and Commercial
-          painting services with high-quality materials and expert workmanship.
-        </p>
-
-        <div className="hero-buttons">
-
-          <a href="#contact" className="primary-btn">
-            Get Free Quote
-          </a>
-
-          <a href="#projects" className="secondary-btn">
-            View Projects
-          </a>
-
-        </div>
-
-        <div className="hero-stats">
-
-          <div>
-            <h3>500+</h3>
-            <p>Projects Done</p>
+            <a href="#projects" className="secondary-btn">
+              View Projects
+            </a>
           </div>
 
-          <div>
-            <h3>100%</h3>
-            <p>Customer Satisfaction</p>
+          <div className="hero-stats">
+            <div>
+              <h3>500+</h3>
+              <p>Projects Done</p>
+            </div>
+
+            <div>
+              <h3>100%</h3>
+              <p>Customer Satisfaction</p>
+            </div>
           </div>
 
         </div>
 
-      </div>
+        <div className="hero-right">
+          <img src={project2Img} alt="Painting House" />
+        </div>
 
-      <div className="hero-right">
-        <img src={project2Img} alt="Painting House" />
-      </div>
-
-    </section>
+      </section>
 
       {/* ================= SERVICES ================= */}
       <section className="services" id="services">
@@ -83,14 +74,12 @@ function App() {
               WHAT WE USE
             </p>
             <h2>
-           Professional
-           Painting 
+              Professional Painting 
               <br />
               <span>Tools</span>
             </h2>
           </div>
-          <p>We use premium rollers, brushes, trowels, and airless spray guns to deliver smooth finishes and long-lasting painting results.
-          </p>
+          <p>We use premium rollers, brushes, trowels, and airless spray guns to deliver smooth finishes and long-lasting painting results.</p>
         </div>
 
         <div className="service-container">
@@ -98,7 +87,7 @@ function App() {
           {/* Interior */}
           <div className="service-card">
             <div className="service-top">
-              <span className="service-number">01</span>
+              <span className="service-number"></span>
             </div>
             <img
               src={interiorImg}
@@ -107,7 +96,7 @@ function App() {
             />
             <h3>Premium Paint Roller</h3>
             <p>
-             Smooth and even wall finishes using premium quality paint rollers for homes, apartments, offices, and commercial spaces.
+              Smooth and even wall finishes using premium quality paint rollers for homes, apartments, offices, and commercial spaces.
             </p>
             <a href="#contact">Learn More →</a>
           </div>
@@ -115,7 +104,7 @@ function App() {
           {/* Exterior */}
           <div className="service-card dark-card">
             <div className="service-top">
-              <span className="service-number">02</span>
+              <span className="service-number"></span>
             </div>
             <img
               src={exteriorImg}
@@ -124,7 +113,7 @@ function App() {
             />
             <h3>Professional Paint Brush</h3>
             <p>
-            Precision painting for edges, corners, doors, windows, trims, and detailed finishing with high-quality brushes.
+              Precision painting for edges, corners, doors, windows, trims, and detailed finishing with high-quality brushes.
             </p>
             <a href="#contact">Learn More →</a>
           </div>
@@ -132,7 +121,7 @@ function App() {
           {/* Texture */}
           <div className="service-card">
             <div className="service-top">
-              <span className="service-number">03</span>
+              <span className="service-number"></span>
             </div>
             <img
               src={textureImg}
@@ -141,7 +130,7 @@ function App() {
             />
             <h3>Wall Finishing Trowel</h3>
             <p>
-            Professional wall putty and smooth finishing using high-quality plastering trowels for a perfect paint-ready surface.
+              Professional wall putty and smooth finishing using high-quality plastering trowels for a perfect paint-ready surface.
             </p>
             <a href="#contact">Learn More →</a>
           </div>
@@ -149,7 +138,7 @@ function App() {
           {/* Commercial */}
           <div className="service-card">
             <div className="service-top">
-              <span className="service-number">04</span>
+              <span className="service-number"></span>
             </div>
             <img
               src={commercialImg}
@@ -158,7 +147,7 @@ function App() {
             />
             <h3>Airless Spray Gun</h3>
             <p>
-             Fast and flawless spray painting for villas, apartments, commercial buildings, factories, and large-scale projects.
+              Fast and flawless spray painting for villas, apartments, commercial buildings, factories, and large-scale projects.
             </p>
             <a href="#contact">Learn More →</a>
           </div>
@@ -166,88 +155,81 @@ function App() {
         </div>
 
       </section>
-     {/* ================= ABOUT ================= */}
-<section className="about" id="about">
 
-  <div className="about-image">
+      {/* ================= ABOUT ================= */}
+      <section className="about" id="about">
 
-    <img
-      src={brush1}
-      alt="Painting Experience"
-      className="about-brush-image"
-    />
+        <div className="about-image">
+          <img
+            src={brush1}
+            alt="Painting Experience"
+            className="about-brush-image"
+          />
 
-    <div className="experience-box">
-      <strong>10+</strong>
-      <span>
-        Years of
-        <br />
-        Experience
-      </span>
-    </div>
+          <div className="experience-box">
+            <strong>10+</strong>
+            <span>
+              Years of
+              <br />
+              Experience
+            </span>
+          </div>
+        </div>
 
-  </div>
+        <div className="about-content">
 
+          <p className="section-title">
+            ABOUT STAR
+          </p>
 
-  <div className="about-content">
+          <h2>
+            We Don't Just Paint.
+            <br />
+            We <span>Transform</span> Spaces.
+          </h2>
 
-    <p className="section-title">
-      ABOUT STAR
-    </p>
+          <p>
+            Star Professional Painting provides reliable and
+            high-quality painting services for residential and
+            commercial spaces.
+          </p>
 
-    <h2>
-      We Don't Just Paint.
-      <br />
-      We <span>Transform</span> Spaces.
-    </h2>
+          <p>
+            Our experienced painters focus on clean work,
+            excellent finishing, quality materials and complete
+            customer satisfaction.
+          </p>
 
-    <p>
-      Star Professional Painting provides reliable and
-      high-quality painting services for residential and
-      commercial spaces.
-    </p>
+          <div className="features">
+            <div>
+              <span>✓</span>
+              Experienced Painters
+            </div>
 
-    <p>
-      Our experienced painters focus on clean work,
-      excellent finishing, quality materials and complete
-      customer satisfaction.
-    </p>
+            <div>
+              <span>✓</span>
+              Quality Materials
+            </div>
 
+            <div>
+              <span>✓</span>
+              Clean Finishing
+            </div>
 
-    <div className="features">
+            <div>
+              <span>✓</span>
+              On-Time Completion
+            </div>
+          </div>
 
-      <div>
-        <span>✓</span>
-        Experienced Painters
-      </div>
+          <a href="#contact" className="primary-btn dark-btn">
+            Work With Us
+            <span>↗</span>
+          </a>
 
-      <div>
-        <span>✓</span>
-        Quality Materials
-      </div>
+        </div>
 
-      <div>
-        <span>✓</span>
-        Clean Finishing
-      </div>
-
-      <div>
-        <span>✓</span>
-        On-Time Completion
-      </div>
-
-    </div>
-
-
-    <a href="#contact" className="primary-btn dark-btn">
-      Work With Us
-      <span>↗</span>
-    </a>
-
-
-  </div>
-
-</section>
+      </section>
 
       {/* ================= PROJECTS ================= */}
       <section className="projects" id="projects">
@@ -271,63 +253,50 @@ function App() {
 
         </div>
 
-
         <div className="project-container">
 
           {/* Project 1 */}
           <div className="project-card">
-
             <img 
               src={project1Img} 
               alt="Modern Home" 
               className="project-image"
             />
-
             <div className="project-info">
               <small>RESIDENTIAL</small>
               <h3>Modern Home</h3>
             </div>
-
           </div>
-
 
           {/* Project 2 */}
           <div className="project-card">
-
             <img 
               src={project2Img} 
               alt="Luxury Interior" 
               className="project-image"
             />
-
             <div className="project-info">
               <small>INTERIOR</small>
               <h3>Luxury Interior</h3>
             </div>
-
           </div>
-
 
           {/* Project 3 */}
           <div className="project-card">
-
             <img 
               src={project3Img} 
               alt="Office Space" 
               className="project-image"
             />
-
             <div className="project-info">
               <small>COMMERCIAL</small>
               <h3>Office Space</h3>
             </div>
-
           </div>
 
         </div>
 
       </section>
-
 
       {/* ================= WHY US ================= */}
       <section className="why-us">
@@ -345,7 +314,6 @@ function App() {
           </h2>
 
         </div>
-
 
         <div className="why-container">
 
@@ -387,7 +355,6 @@ function App() {
 
       </section>
 
-
       {/* ================= CONTACT ================= */}
       <section className="contact" id="contact">
 
@@ -411,7 +378,7 @@ function App() {
           <div className="contact-buttons">
 
             <a
-              href="tel:+919999999999"
+              href="tel:8807239224"
               className="primary-btn"
             >
               Call Us Now
@@ -431,7 +398,6 @@ function App() {
 
       </section>
 
-
       {/* ================= FOOTER ================= */}
       <footer>
 
@@ -450,12 +416,9 @@ function App() {
 
           </div>
 
-
           <div className="footer-links">
 
-            <h4>
-              Navigation
-            </h4>
+            <h4>Navigation</h4>
 
             <a href="#home">Home</a>
             <a href="#services">Services</a>
@@ -465,14 +428,11 @@ function App() {
 
           </div>
 
-
           <div className="footer-contact">
 
-            <h4>
-              Contact
-            </h4>
+            <h4>Contact</h4>
 
-            <a href="tel:+919999999999">
+            <a href="tel:+919677826827">
               +91 9677826827
             </a>
 
@@ -487,7 +447,6 @@ function App() {
           </div>
 
         </div>
-
 
         <div className="footer-bottom">
 
